@@ -1,0 +1,306 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+ 	background: #e8e8fa;
+	font-family: arial;
+}
+
+.menu_bar {
+	display: none;
+	font-family: arial;
+}
+.bloque h2 {
+	display: block;
+	font-size: 3em;
+	font-family: arial;
+	text-align: center;
+	padding: 200px 0;
+	background: url(../imagenes/noticia.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#navigation-bar {
+    position: relative;
+    margin-top: 10px;
+    height: 35px;
+    padding-left: 35px;
+}
+#search {
+    position: relative;
+    float: left;
+    width: 35px;
+    height: 35px;
+    margin-left: 0px;
+}
+#label {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    z-index: 1000;
+}
+#label .icon-search {
+    margin-right: 0px;
+    display: block;
+    width: 35px;
+    height: 35px;
+    font-size: 1.5em;
+    padding: 5px;
+    color: #fff;
+	background-color: #424242;
+    cursor: pointer;
+}
+#label label:hover {
+    color: #424242;
+	background-color: #fff;
+}
+
+#input {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    width: 550px;
+    height: 60px;
+    z-index: 500;
+    overflow: hidden;
+}
+#input input {
+    display: block;
+    position: absolute;
+    top: 0;
+	margin-left: 0px;
+    width: 550px;
+    height: 35px;
+    margin: 0;
+    padding: 0 10px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+}
+
+header {
+	width: 100%;
+	background: #0e5061;
+	padding: 0px 0 5px 0px;
+}
+
+header nav {
+	background: #0e5061;
+	z-index: 1000;
+	max-width: 1000px;
+	width: 90%;
+	margin: 0px auto 20px 0px;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	display: inline-block;
+	position: relative;
+}
+
+
+header nav ul li span {
+	margin-left: 10px; 
+
+}
+
+header nav ul li .estado .icon-user{
+	color: #00ff00;
+
+}
+
+header nav ul .close {
+	color: #ff0000;
+
+}
+
+header nav ul li:hover {
+	background: #000;
+}
+
+header nav ul li a {
+	color: #fff;
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 1.4em;
+	font-family: arial;
+}
+
+header nav ul li a span {
+	margin-right: 10px;
+}
+
+header nav ul form .icon-search {
+	color: #fff;
+	font-size: 1.5em;
+	margin-bottom: 0px;
+	margin-right: 10px;
+}
+
+header nav ul form input[type="text"] {
+	height: 35px;
+	width: 400px;
+	font-size: 1.3em;
+	margin-right: 0px;
+
+}
+
+header nav ul form input[type="submit"] {
+	margin-left: 0px;
+	height: 35px;
+	width: 60px;
+
+}
+
+header nav ul li:hover .children {
+	display: block;
+}
+
+header nav ul li .children {
+	display: none;
+	background: #011826;
+	position: absolute;
+	width: 150%;
+	z-index: 1000;
+}
+
+header nav ul li .children li {
+	display: block;
+	overflow: hidden;
+/*	border-bottom: 1px solid rgba(255,255,255,.5);*/
+}
+ 
+header nav ul li .children li a {
+	display: block;
+	font-size: 1em;
+	font-family: arial;
+	transition: 2s;
+}
+
+header nav ul li .children li a:hover {
+	border-bottom: 1px solid rgba(255,255,255,.5);
+}
+
+header nav ul li .children li a span{
+	float: right;
+	position: relative;
+	top: 3px;
+	margin-right: 0;
+	margin-left: 10px;
+}
+
+header nav ul li .caret {
+	position: relative;
+	top: 3px;
+	margin-left: 10px;
+	margin-right: 0px; 
+}
+@media screen and (max-width: 1000px){
+	.bloque h2 {
+		padding: 124px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		padding-top: 75px;
+	}
+
+	header {
+		padding: 0;
+	}
+
+	.bloque h2 {
+		display: none;
+	}
+
+	header img {
+		display: none;
+	}
+
+	.menu_bar {
+		display: block;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		background: #23238e;
+
+	}
+
+	.menu_bar .bt-menu {
+		display: block;
+		padding: 20px;
+		overflow: hidden;
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.menu_bar span {
+		float: right;
+		font-size: 35px;
+	}
+
+	header nav {
+		width: 70%;
+		height: calc(100% - 80px);
+		position: fixed;
+		right: 100%;
+		margin: 0px;
+		overflow: scroll;
+	}
+
+	header nav ul li {
+		display: block;
+		border-bottom: 1px solid rgba(255,255,255,.5)
+	}
+
+	header nav ul li a {
+		display: block;
+	}
+
+	header nav ul li .children {
+		width: 100%;
+		position: relative;
+	}
+
+	header nav ul li .children li a{
+		margin-left: 20px;
+	}
+
+	header nav ul li .caret {
+		float: right;
+	}
+
+	#navigation-bar {
+    	margin-top: 30px;
+    	padding-left: 15px;
+	}
+
+	#input {
+		max-width: 300px;
+		min-width: 300px;
+	    width: 100%;
+	    margin-right: 15px;
+	}
+
+	#input input{
+		max-width: 300px;
+		min-width: 300px;
+	    width: 100%;
+	    margin-right: 15px;
+	}
+}

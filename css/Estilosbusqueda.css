@@ -1,0 +1,350 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+ 	background: #e8e8fa;
+	font-family: arial;
+}
+
+.main {
+	max-width: 1000px;
+	width: 90%;
+}
+
+.container {
+	max-width: 1000px;
+	width: 90%;
+	margin: 20px auto;
+}
+
+.container .articles {
+	width: 68.5%;
+	margin-right: 1.5%; 
+	float: left;
+
+}
+
+.container .articles .encabezado {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	padding: 20px 0;
+	color: #fff;
+	background: #424242;
+	margin-bottom: 20px;
+}
+
+.container .articles article {
+	padding: 20px;
+	background: #fff;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.container .articles article img {
+	float: right;
+	margin-bottom: 20px;
+	max-width: 150px;
+	min-width: 50px;
+}
+
+.container .articles article h2,h3 {
+	text-align: center;
+}
+
+.container .articles article .doc {
+
+	max-width: 325px;
+	width: 100%;
+	height: 150px;
+	margin: 10px auto;
+	background: #FFF;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+
+}
+
+.container .articles article .doc span {
+	font-size: 7.5em;
+	color: #E60A0A;
+	background: #fff;
+	border-radius: 8px;
+	float: left;
+}
+
+.container .articles article .doc .boton {
+	display: inline-block;
+	width: 150px;
+	padding: 5px;
+	margin: 5px;
+	color: #fff;
+	font-size: 1.2em;
+	background: #E60A0A;
+	float: right;
+}
+
+.container .articles article .doc .boton:hover {
+	background: #B40806;
+}
+
+.container .articles article .doc .boton a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.container aside .boton a {
+	text-decoration: none;
+	background: #23238e;
+	color: #fff;
+	padding: 8px 35px;
+	font-size: 1.2em;
+	display: inline-block;
+	margin-bottom: 17px;
+	margin: 0 10%;
+	border-bottom: 8px solid #000;
+}
+
+.botonsesion {
+	font-family: arial;
+	cursor: pointer;
+	margin: 20px 0px 20px 10px; 
+	cursor: pointer;
+    width: 250px;
+    height: 35px;
+    padding: 0;
+    background: #23238e;
+	border: 1px solid #23238e;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.botonsesion a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.botonsesion:hover {
+	background: #424242;
+    border: 1px solid #424242;
+}
+
+.container aside .boton a:hover {
+	background: #4d4dff;
+	border-bottom: 3px solid #000;
+	margin: 5px 10% 0px 10%;
+}
+
+
+aside {
+	width: 28.5%;
+	float: left;
+	padding: 20px;
+	margin-right: 1.5%;
+	background: #fff;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	
+}
+
+aside ul li {
+	list-style: none;
+}
+
+aside > ul > li > a {
+	width: 100%;
+	color: #000;
+	padding: 5px;
+	font-size: 1em;
+	font-weight: bold;
+	display: inline-block;
+	margin: 6px auto;
+	background-color: #c0c0c0;
+	text-decoration: none;
+	text-align: center;
+	list-style: none;
+}
+
+aside ul li a:hover {
+	text-decoration: underline;
+}
+
+.container aside .soporte .textarea {
+	width: 100%;
+	height: 75px;
+	margin-top:10px;
+	padding-left: 10px;
+	font-size: 1em;
+	outline: none;
+	background-color: #c0c0c0;
+	border-radius: 10px;
+}
+
+.container aside .titular {
+	display: none;
+	width: 100%;
+	text-align: center;
+
+}
+
+.container aside .soporte input[type="submit"]{
+	margin: 10px auto;
+	width: 100%;
+	height: 45px;
+	background: #024959;
+	color: #fff;
+	font-size: 1.2em;
+	border-radius: 5px;
+
+}
+
+.container aside .soporte input[type="submit"]:hover { 
+	background: #037e8c;
+}	
+
+.contactos {
+	width: 100%;
+	overflow: hidden;
+}
+
+.contactos a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.container aside .contactos .icon-facebook {
+	font-size: 2.3em;
+	background: #3b5998;
+	padding: 12px;
+	border-radius: 50%;
+	margin: 10px;
+	transition:all 300ms ease;
+	float: left;
+}
+
+.container aside .contactos .icon-facebook:hover {
+	font-size: 1.7em;
+	text-decoration: none;
+}
+
+.container aside .contactos .icon-twitter {
+	font-size: 2.3em;
+	background: #00abf0;;
+	padding: 12px;
+	border-radius: 50%;
+	margin: 10px;
+	transition:all 300ms ease;
+	float: left;
+}
+
+.container aside .contactos .icon-twitter:hover {
+	font-size: 1.7em;
+	text-decoration: none;
+}
+
+.container aside .contactos .icon-whatsapp {
+	font-size: 2.3em;
+	background: #00cc00;
+	padding: 12px;
+	border-radius: 50%;
+	margin: 10px;
+	transition:all 300ms ease;
+	float: left;
+}
+
+.container aside .contactos .icon-whatsapp:hover {
+	font-size: 1.7em;
+	text-decoration: none;
+}
+
+footer {
+	background: #424242;
+	color: #fff;
+	clear: both;
+	padding: 20px 0px;
+	text-align: center;
+}
+footer .footer p a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #fff;
+}
+
+footer .footer p a[href="cetis067_dir@dgeti.sems.gob.mx"], .AcercaDe{
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+
+@media screen and (max-width: 750px) {
+	.container {
+		width: 100%;
+		margin: 20px auto;
+	}
+
+	.botonsesion{
+		width: 215px;
+	}
+
+	.container .articles article p, {
+		font-size: .9em;
+
+	}
+
+	.container .articles article h2 {
+		font-size: 1.3em;
+
+	}
+
+	aside {
+		width: 100%;
+		padding: 0px;
+	}
+
+	aside img {
+		width: 100%;
+		margin: -24px auto 10px auto;
+	}
+
+	aside ul {
+		margin-bottom: 24px;
+		display: none;
+	}
+
+	.container .articles {
+		width: 100%;
+	}
+
+	aside {
+		display: none;
+	}
+
+	.container aside .titular {
+		display: block;
+	}
+
+	.container aside .titular h2 {
+		font-size: 2em;
+	}
+
+	.soporte {
+		margin: 10px 10%;
+		display: none;
+	}
+
+	.contactos {
+		display: inline-block;
+		float: left;
+		width: 80%;
+		margin: 10px 10%;
+		display: none;
+	}
+
+}
