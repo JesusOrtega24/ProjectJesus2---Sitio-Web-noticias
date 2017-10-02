@@ -1,3 +1,3 @@
 # ProjectJesus2-Sitio-Web-noticias
 
-Por:  Jesus Toxqui
+Por:  Jesus Toxqui Ortega
